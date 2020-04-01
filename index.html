@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamecube Emultor</title>
+    <style>
+        body{
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+        video{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body >
+    <video controls autoplay>
+        <source id="asd" onload="load()"  src="test.mp4" type="video/mp4">
+    </video>
+    <script>
+        function load(){
+            setTimeout("2007");
+            console.log("test");
+            var x = document.getElementById("asd");
+            x.play();
+        }
+    </script>
+</body>
+</html>
